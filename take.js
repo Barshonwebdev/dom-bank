@@ -19,7 +19,7 @@ document.getElementById("take-btn").addEventListener("click",function(){
     const totalBooksStringElementString = totalBooksStringElement.innerText;
     const totalBooks = parseInt(totalBooksStringElementString);
     takenBookInputField.value = "";
-    if (takenBookInput > totalBooks) {
+    if (takenBookInput > totalBooks){
       alert("Insufficient amount");
       return;
     }
