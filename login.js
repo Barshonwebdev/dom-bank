@@ -5,7 +5,9 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   const password = passwordField.value;
   
   if (email == "bc@gmail.com" && password == "webdev") {
-    console.log(email);
-    console.log(password);
+    window.location.href="library.html";
+  }
+  else {
+    alert("Wrong credentials");
   }
 });
