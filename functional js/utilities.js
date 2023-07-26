@@ -7,8 +7,15 @@ function getValuefromInput(elementId){
       getValuefromInput.value =" "
       exit;
     }
-    getValuefromInput.value="";
-    return InputValue;
+    else if(InputValue<0){
+      alert("type positive number");
+      getValuefromInput.value=" "
+      exit;
+    } else {
+      getValuefromInput.value = "";
+      return InputValue;
+    }
+    
 }
 
 function showValuefromOutput(elementId){
